@@ -5,11 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "boto3>=1.36.23",
     "evidently>=0.6.5",
     "fastapi>=0.115.8",
     "ipykernel>=6.29.5",
     "kaggle>=1.6.17",
+    "matplotlib>=3.10.0",
     "pandas>=2.2.3",
     "prometheus-client>=0.21.1",
+    "pyspark>=3.5.5",
+    "s3fs>=0.4.2",
+    "seaborn>=0.13.2",
     "uvicorn>=0.34.0",
 ]
