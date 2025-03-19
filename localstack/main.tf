@@ -14,8 +14,8 @@ output "is_localstack" {
   value = data.aws_caller_identity.current.id == "000000000000"
 }
 
-resource "aws_s3_bucket" "test_bucket" {
-  bucket = "test-bucket"
+resource "aws_s3_bucket" "data" {
+  bucket = "data"
 }
 
 

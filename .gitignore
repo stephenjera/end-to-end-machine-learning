@@ -1,5 +1,7 @@
 .env
 volumes
+data
+spark-warehouse
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
