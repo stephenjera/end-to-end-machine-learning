@@ -1,4 +1,15 @@
 services:
+  fastapi-app:
+    build:
+      context: ./app  # Path to your FastAPI app folder
+      dockerfile: Dockerfile
+    container_name: fastapi-app
+    ports:
+      - "8000:8000"  # Expose port 8000 for FastAPI
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow-server:5000
+    depends_on:
+      - mlflow
   mlflow:
     image: burakince/mlflow:latest
     container_name: mlflow-server
